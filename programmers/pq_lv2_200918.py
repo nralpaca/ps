@@ -10,7 +10,7 @@ def solution(scoville, K):
 
     while True:
         first = pq.get()
-        if first >= K:
+        if first >= K: 
             break
 
         second = pq.get()
