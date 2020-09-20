@@ -6,7 +6,8 @@ daily problem solving
 
 
 ----
-python 값 제거 할 때
+python 값 제거 할 때 주의사항
+>
 ```
 a = [1, 2, 3]
 remove_list = []
@@ -21,6 +22,7 @@ for r in remove_list:
 ```
 
 queue.PriorityQueue 보다 heapq가 더 빠르다.
+>
 ```
 import heapq
 h = []
