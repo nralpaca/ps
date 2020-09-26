@@ -35,3 +35,9 @@ val = heapq.heappop(h)
 h = [1, 3, 2]
 heapq.heapify(h)
 ```
+
+----
+
+[DEBUG]
+devide by zero
+stack overflow
