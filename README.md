@@ -40,4 +40,6 @@ heapq.heapify(h)
 
 [DEBUG]
 devide by zero
+modular by 1000000007
+x y <-> y x
 stack overflow
