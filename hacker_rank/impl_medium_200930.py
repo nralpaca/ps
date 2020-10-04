@@ -9,15 +9,25 @@ import sys
 # Complete the organizingContainers function below.
 def organizingContainers(container):
     
-    for c in range(len(container)):
+    for b in range(len(container)):
 
-        available = sum(container[c]) - container[c][c]
-        oth_sum = 0
-        for o in range(len(container)):
-            if c != o:
-                oth_sum += container[o][c]
-        print("container{} available {} need to swap{}".format(c, available, oth_sum))
+        for c1 in range(len(container)):  # -= 1            
+            if c1 == b:
+                continue
 
+            while container[c1][b]:
+                target = -1
+                for c2 in range(len(container)): # -= 1
+                    if c1 == c2 or container[c2][b] == 0:
+                        continue
+                    
+                    target = c2
+                    break
+                if target == -1:
+                    return 'Impossible'
+                
+
+        
 
     return 'Possible'
 
